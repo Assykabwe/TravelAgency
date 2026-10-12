@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust - Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Wanderlust</a>
+      
+      <!-- Hamburger Toggle Button for Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links Container -->
+      <nav class="nav-links" id="navLinks">
+        <!-- Close Button inside Mobile Overlay Menu -->
+        <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+        
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#packages" class="nav-item">Packages</a>
+        <a href="#testimonials" class="nav-item">Testimonials</a>
+        <a href="#contact" class="btn btn-primary btn-nav nav-item">Plan Your Trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-placeholder"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Discover Your Next<br>Unforgettable Journey</h1>
+      <p>Explore top destinations, exclusive packages, and unique travel experiences tailored just for you.</p>
+      <a href="#contact" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </section>
+
+  <!-- Popular Tour Packages Section -->
+  <section id="packages" class="packages-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Tour Packages</h2>
+        <p>Choose from our top-rated destinations for your next vacation.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image-placeholder">
+            <img src="Images/Paris.avif" alt="Package" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="card-body">
+            <h3>Romantic Paris Getaway</h3>
+            <div class="card-meta">
+              <span>⏱ 7 Days, 6 Nights</span>
+              <span class="price">$1,450</span>
+            </div>
+            <p>Experience the city of lights, world-class museums, and exquisite dining.</p>
+            <a href="#" class="btn btn-outline">Explore Details</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image-placeholder">
+            <img src="Images/Bali.avif" alt="Package" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="card-body">
+            <h3>Bali Tropical Paradise</h3>
+            <div class="card-meta">
+              <span>⏱ 10 Days, 9 Nights</span>
+              <span class="price">$1,250</span>
+            </div>
+            <p>Relax on pristine beaches, visit ancient temples, and experience lush landscapes.</p>
+            <a href="#" class="btn btn-outline">Explore Details</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image-placeholder">
+            <img src="Images/Swiss.avif" alt="Package" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="card-body">
+            <h3>Swiss Alps Adventure</h3>
+            <div class="card-meta">
+              <span>⏱ 5 Days, 4 Nights</span>
+              <span class="price">$1,890</span>
+            </div>
+            <p>Hike breathtaking mountain trails, ride panoramic trains, and enjoy cozy mountain resorts.</p>
+            <a href="#" class="btn btn-outline">Explore Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Travelers Say</h2>
+        <div class="title-dots">
+          <span></span><span class="active"></span><span></span>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Wanderlust made our honeymoon seamlessly easy. Every detail from transport to guided tours was perfectly organized!"</p>
+          <div class="testimonial-user">
+            <div class="avatar-placeholder">
+              <img src="Images/Sarah.avif" alt="User" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="user-info">
+              <h4>Sarah Johnson</h4>
+              <p>Traveled to Paris</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The best vacation booking experience I've ever had. The local guide in Bali was incredibly knowledgeable!"</p>
+          <div class="testimonial-user">
+            <div class="avatar-placeholder">
+              <img src="Images/Micheal.avif" alt="User" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
+            <div class="user-info">
+              <h4>Michael Chen</h4>
+              <p>Traveled to Bali</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Form Section -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <div class="cta-header">
+        <h2>Ready to Start Planning Your Next Trip?</h2>
+        <p>Tell us where you want to go and our travel experts will craft the perfect itinerary tailored to your preferences.</p>
+      </div>
+
+      <form class="cta-form" onsubmit="event.preventDefault();">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Select Destination" required />
+          <button type="submit" class="btn btn-primary btn-submit">Plan My Trip</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Overlay -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const navLinks = document.getElementById('navLinks');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    // Open Menu
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.add('active');
+    });
+
+    // Close Menu via X Button
+    menuClose.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+
+    // Close Menu when clicking any link
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
