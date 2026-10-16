@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #333333;
+    overflow-x: hidden;
+  }
+}
