@@ -1,59 +1,56 @@
-<<<<<<< HEAD
-# React + Vite
+# ✈️ Wanderlust Travel Agency — Single-Page React Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-#  Wanderlust Travel Agency — Single-Page Website
-
-Wanderlust is a lightweight, responsive single-page web template designed for a modern travel agency. It provides travelers with an intuitive interface to explore popular tour packages, read customer testimonials, and request customized travel itineraries.
+Wanderlust is a modern, responsive single-page web application designed for a travel agency. Rebuilt with **React**, **Vite**, and **Tailwind CSS**, it delivers a seamless user experience across mobile, tablet, and desktop devices.
 
 ---
 
-## Key Features
+## 🌟 Key Features
 
-- **Responsive Design**: Optimized for desktop, tablet, and small mobile screens using CSS Grid and Flexbox.
-- **Mobile Overlay Navigation**: Slide-down menu overlay with a toggle button (`☰`) and close button (`✕`) for seamless mobile browsing.
-- **Hero Banner**: Engaging header section featuring background imagery, call-to-action (CTA) buttons, and introductory messaging.
-- **Tour Packages Grid**: Visually appealing cards showcasing destinations, trip durations, and pricing details.
-- **Traveler Testimonials**: Customer review section highlighting authentic traveler feedback and avatar badges.
-- **Interactive CTA Form**: Lead capture form enabling visitors to request custom itineraries and destination quotes.
+- **Componentized Architecture**: Clean separation into modular components (`Header`, `Hero`, `PackageGrid`, `GuestStepper`, `Testimonials`, `ContactCTA`, `Footer`).
+- **Interactive Destination Filter**: Dynamic state-based filtering (`useState`) allowing users to filter tour packages by region (*All*, *Europe*, *Asia*).
+- **Interactive Guest Stepper**: Reusable controlled component embedded within package cards to dynamically set traveler count.
+- **Responsive Mobile Navigation**: Mobile drawer menu overlay featuring toggle (`☰`) and close (`✕`) buttons.
+- **Hero Banner**: Full-width background image header with call-to-action messaging.
+- **Lead Capture Form**: Interactive itinerary request form styled with dark-mode accents.
 
 ---
 
-## Built With
+## 🛠️ Tech Stack
 
-- **HTML5** — Semantic page markup
-- **CSS3** — Custom styles, CSS Grid, Flexbox, and Media Queries
-- **JavaScript (Vanilla)** — Lightweight DOM manipulation for mobile navigation controls
+- **React 18** — Component-based UI library
+- **Vite** — Fast, modern frontend build tool
+- **Tailwind CSS v4** — Utility-first CSS framework
+- **JavaScript (ES6+)** — Application logic and state management
 - **Google Fonts** — [Poppins](https://fonts.google.com/specimen/Poppins) typography
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 TravelAgency/
-│
-├── index.html          # Main HTML structure
-├── style.css           # Custom styles & media queries
-└── Images/             # Local project assets
-    ├── BackgeoundImage.avif
-    ├── Paris.avif
-    ├── Bali.avif
-    ├── Swiss.avif
-    ├── Sarah.avif
-    └── Micheal.avif
->>>>>>> d79091009c9bcfb12d80fce898e658316175789b
+├── public/
+│   └── Images/             # Static image assets
+│       ├── BackgeoundImage.avif
+│       ├── Paris.avif
+│       ├── Bali.avif
+│       ├── Swiss.avif
+│       ├── Sarah.avif
+│       └── Micheal.avif
+├── src/
+│   ├── components/         # Modular React components
+│   │   ├── ContactCTA.jsx
+│   │   ├── Footer.jsx
+│   │   ├── GuestStepper.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── PackageGrid.jsx
+│   │   └── Testimonials.jsx
+│   ├── data/
+│   │   └── packages.js     # Hardcoded tour & testimonial data
+│   ├── App.jsx             # Main layout container
+│   ├── index.css           # Tailwind CSS v4 setup
+│   └── main.jsx            # Application entry point
+├── index.html              # HTML entry point
+├── vite.config.js          # Vite & Tailwind plugin configuration
+└── package.json            # Dependencies and scripts
