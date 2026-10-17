@@ -1,11 +1,16 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative h-[400px] md:h-[480px] bg-[#7b8493] flex items-center justify-center text-center text-white overflow-hidden">
+    <section id="home" className="relative h-[400px] md:h-[480px] w-full flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Full-width background image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center max-w-[900px] mx-auto opacity-90"
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url('Images/BackgeoundImage.avif')" }}
       />
+      
+      {/* Dark overlay for contrast */}
       <div className="absolute inset-0 bg-black/35 z-10" />
+
+      {/* Hero content */}
       <div className="relative z-20 max-w-[650px] px-5">
         <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-3">
           Discover Your Next<br />Unforgettable Journey
